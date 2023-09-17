@@ -20,7 +20,7 @@
 /* dark mode user-agent-styles */
 
 html {
-  color-scheme: dark light;
+  color-scheme: dark;
 }
 
 /* min body height */
@@ -82,10 +82,6 @@ h1, h2, p {
     justify-content: space-between;
 }
 
-.nav-link {
-    color: white;
-}
-
 /* hero */
 
 .hero {
@@ -110,7 +106,7 @@ h1, h2, p {
 
 .second-hero-title {
     text-align: center;
-
+    margin-bottom: .9em;
 }
 
 .pp-img {
@@ -125,8 +121,9 @@ h1, h2, p {
 /* button */
 
 .btn {
+    display: block;
     flex: 1 1 auto;
-    margin: 1em;
+    margin: auto;
     padding: 1.2em;
     text-align: center;
     text-transform: uppercase;
@@ -135,12 +132,12 @@ h1, h2, p {
     color: white;
     border-radius: 25px;
     font-weight: bold;
-    align-self: center;
-   }
-
-.btn-3 {
     background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
-  }
+    width: 50%;
+    font-weight: 600;
+    border: 0px;
+    font-size: 14px;
+   }
 
 .btn:hover {
     background-position: right center;
@@ -162,14 +159,28 @@ h1, h2, p {
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
 }
 .card {
-    margin: auto;
+    padding: 1em;
+}
+
+.container-card {
+    background: #1A1A1A;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .card-img {
-    width: 500px;
+    width: 350px;
     border-radius: 7px;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0.504);
+}
+
+.card-text {
+    margin: 1.5em 0;
+    text-align: center;
 }
 
 /* mobile media queries */
@@ -189,4 +200,22 @@ h1, h2, p {
     .cards {
         grid-template-columns: 1fr;
     }
+
+    .pp-img {
+        margin-top: 1em;
+    }
+}
+
+/* form */
+
+input, textarea {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
 }
