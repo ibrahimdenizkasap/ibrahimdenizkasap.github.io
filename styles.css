@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  font-family: Raleway, sans-serif;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* font sizes */
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+h1, h2, p {
+    margin: 0.2em;
+}
+
+/* navigation bar */
+
+.logo {
+    margin: 2rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    padding: 2em;
+    font-size: 1.25em;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* hero */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 0;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.hero-img {
+    margin: auto;
+}
+
+.hero-title {
+    text-align: center;
+}
+
+.second-hero-title {
+    text-align: center;
+
+}
+
+.pp-img {
+    border-radius: 290px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    min-width: 150px;
+    border: 2px solid;
+}
+
+/* button */
+
+.btn {
+    flex: 1 1 auto;
+    margin: 1em;
+    padding: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    align-self: center;
+   }
+
+.btn-3 {
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  }
+
+.btn:hover {
+    background-position: right center;
+}
+/* container */
+
+.container {
+    margin: 7em auto;
+    max-width: 62.5rem;
+    padding: 0 1.5rem;
+}
+
+/* mobile media queries */
+
+@media screen and (max-width: 600px) {
+    .nav-list {
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 1330px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+}
