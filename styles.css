@@ -51,6 +51,7 @@ h1 {
 
 h2 {
     font-size: 24px;
+    font-weight: 600;
 }
 
 p {
@@ -115,8 +116,20 @@ h1, h2, p {
 .second-hero-title {
     text-align: center;
     margin-bottom: .9em;
+    font-weight: 400;
 }
 
+/* container */
+
+.container {
+    margin: 7em auto;
+    max-width: 62.5rem;
+    padding: 0 1.5rem;
+}
+
+.first-container {
+    margin-top: auto;
+}
 
 /* button */
 
@@ -142,13 +155,7 @@ h1, h2, p {
 .btn:hover {
     background-position: right center;
 }
-/* container */
 
-.container {
-    margin: 7em auto;
-    max-width: 62.5rem;
-    padding: 0 1.5rem;
-}
 
 /* portfolio cards */
 
@@ -206,10 +213,6 @@ h1, h2, p {
 
     .hero-img {
         margin-top: 2em;
-    }
-
-    .first-container {
-        margin-top: auto;
     }
 }
 
