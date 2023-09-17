@@ -229,3 +229,21 @@ input, textarea {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+.lang, .lang-tr{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.lang {
+    background-image: url(images/tr-bayrak.png);
+}
+
+.lang-tr {
+    background-image: url(images/uk-bayrak.png);
+}
