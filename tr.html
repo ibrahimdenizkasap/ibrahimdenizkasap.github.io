@@ -9,6 +9,16 @@
         <link rel="stylesheet" href="styles.css"  type="text/css" />
     </head>
   <body>
+    <aside class="sidebar-wrapper" id="navbar">
+        <div class="sidebar">
+            <div class="nav-list">
+                <a href="#about">hakkımda</a>
+                <a href="#portfolio">portföy</a>
+                <a href="#music">müzik</a>
+                <a href="#contact">iletişim</a>
+            </div>
+        </div>
+    </aside>
     <a href="./" aria-label="ingilizceye geç"><div class="lang-tr"></div></a>
     <div class="hero">
         <div class="hero-text">
@@ -23,7 +33,7 @@
     <span class="hero-img">
     </span>
     </div>
-<div class="container first-container">
+<div class="container first-container" id="about">
     <div class="about">
         <h2 class="about-title">hakkımda</h2>
         <p>Web sitesi oluşturma, dijital pazarlama ve içerik yazma konularına ilgiliyim. Online deneyimleri en iyi hale getirebilir, etkili dijital kampanyalar oluşturabilirim.</p>
@@ -47,7 +57,7 @@
         <p>Blog yazıları, web sitesi metinleri, reklam metinler gibi çeşitli içerikler yazma konusunda deneyimim var. Okuyucuya hitap eden, mesajı etkili bir şekilde ileten, net ve anlaşılabilir yazılar hazırlayabilirim.</p>
     </div>
 </div>
-<div class="portfolio">
+<div class="portfolio" id="portfolio">
 <h2>portföy</h2>
 <p>freelancer olarak yaptığım web siteleri</p>
 </div>
@@ -80,6 +90,13 @@
         </div>
     </div>
 </div>
+<section class="utube-wrapper container" id="music">
+    <div class="utube-title">
+        <h2>müzik</h2>
+        <p>bir süreliğine müzikle uğraşmayı bıraktım ama son yaptığım şarkıyı buradan dinleyebilirsiniz!</p>
+    </div>
+    <iframe class="utube" src="https://www.youtube-nocookie.com/embed?listType=playlist&list=UUfzY-LrK0EQqlh2xJoINHKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+</section>
 <div class="container">
     <div class="contact">
         <h2 id="contact">iletişim</h2>
@@ -91,5 +108,6 @@
         <button class="btn form-button">Gönder</button>
     </form>
 </div>
+<script src="deniz.js"></script>
   </body>
 </html>

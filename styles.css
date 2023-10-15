@@ -42,6 +42,7 @@ video {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 /* font sizes */
@@ -70,22 +71,37 @@ h1, h2, p {
 
 /* navigation bar */
 
+.sidebar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    transition: top 0.3s ease; 
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid rgb(11, 239, 223);
+    margin: 1em 0 0 0;
+    background-color: #121212;
+    border-radius: 15px;
+}
+
 .logo {
-    margin: 2rem;
+    margin: 2em;
 }
 
 .nav-list {
     display: flex;
     list-style: none;
-    gap: 1em;
-    padding: 2em;
-    font-size: 1.25em;
-}
-
-.nav-bar {
-    display: flex;
+    gap: 1rem;
+    font-size: 1.5em;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    padding: 1.5em;
 }
 
 /* hero */
@@ -184,10 +200,10 @@ h1, h2, p {
 }
 
 .container-card {
-    background: #3b3b3b;
     border-radius: 20px;
     padding: 20px;
     max-width: 420px;
+    border: 1px solid rgb(11, 239, 223);;
 }
 
 .card-img {
@@ -199,29 +215,6 @@ h1, h2, p {
 .card-text {
     margin: 1.5em 0;
     text-align: center;
-}
-
-/* mobile media queries */
-
-@media screen and (max-width: 600px) {
-    .nav-list {
-        display: none;
-    }    
-}
-
-@media screen and (max-width: 1200px) {
-    .hero {
-        grid-template-columns: 1fr;
-        gap: 1em;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-img {
-        margin-top: 2em;
-    }
 }
 
 /* form */
@@ -248,10 +241,65 @@ input, textarea {
     margin: 20px;
 }
 
+/* youtube video */
+
+.utube-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10em;
+}
+
+.utube-title {
+    margin: auto 0;
+}
+
+.utube {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+/* language changer */
+
 .lang {
     background-image: url(images/tr-bayrak.png);
 }
 
 .lang-tr {
     background-image: url(images/uk-bayrak.png);
+}
+
+/* mobile media queries */
+
+@media screen and (max-width: 600px) {
+    .nav-list {
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .container-card {
+        margin: 2em auto;
+    }
+
+    .hero-img {
+        margin-top: 2em;
+    }
+
+    .utube-wrapper {
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+    }
+
+    .sidebar-wrapper {
+        display: none;
+    }
 }

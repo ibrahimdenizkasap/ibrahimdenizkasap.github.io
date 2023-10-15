@@ -9,6 +9,16 @@
         <link rel="stylesheet" href="styles.css"  type="text/css" />
     </head>
   <body>
+    <aside class="sidebar-wrapper" id="navbar">
+        <div class="sidebar">
+            <div class="nav-list">
+                <a href="#about" onclick="closeNav()">about</a>
+                <a href="#portfolio" onclick="closeNav()">portfolio</a>
+                <a href="#music" onclick="closeNav()">music</a>
+                <a href="#contact" onclick="closeNav()">contact</a>
+            </div>
+        </div>
+    </aside>
     <a href="./tr" aria-label="Switch to Turkish"><div class="lang"></div></a>
     <div class="hero">
         <div class="hero-text">
@@ -23,7 +33,7 @@
     <span class="hero-img">
     </span>
     </div>
-<div class="container first-container">
+<div class="container first-container" id="about">
     <div class="about">
         <h2 class="about-title">about me</h2>
         <p>I'm 21 and I'm good at making websites, promoting stuff online, and writing content. I can put together cool online experiences and run effective digital campaigns.
@@ -48,7 +58,7 @@
         <p>I've written a variety of content in my 3 years of experience. Such as blog posts, website texts and advertising texts. I can write clear, understandable and effective content that appeals to the reader.</p>
     </div>
 </div>
-<div class="portfolio">
+<div class="portfolio" id="portfolio">
 <h2>portfolio</h2>
 <p>these are the websites i made as a freelancer</p>
 </div>
@@ -81,6 +91,13 @@
         </div>
     </div>
 </div>
+<section class="utube-wrapper container" id="music">
+    <div class="utube-title">
+        <h2>music</h2>
+        <p>i stopped making music for the time being but you can listen to my latest song from here!</p>
+    </div>
+    <iframe class="utube" src="https://www.youtube-nocookie.com/embed?listType=playlist&list=UUfzY-LrK0EQqlh2xJoINHKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+</section>
 <div class="container">
     <div class="contact">
         <h2 id="contact">contact</h2>
@@ -92,5 +109,6 @@
         <button class="btn form-button">Submit</button>
     </form>
 </div>
+<script src="deniz.js"></script>
   </body>
 </html>
