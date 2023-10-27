@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>deniz</title>
+        <title>Deniz Kasap - Dijital Pazarlama & Web Geliştirme</title>
         <meta name="description" content="Web geliştirme, dijital pazarlama ve içerik yazarlığı ile ilgileniyorum."/>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="styles.css"  type="text/css" />
@@ -12,13 +12,23 @@
     <aside class="sidebar-wrapper" id="navbar">
         <div class="sidebar">
             <div class="nav-list">
-                <a href="#about">hakkımda</a>
-                <a href="#portfolio">portföy</a>
-                <a href="#music">müzik</a>
-                <a href="#contact">iletişim</a>
+                <a href="#about" onclick="closeNav()">hakkımda</a>
+                <a href="#portfolio" onclick="closeNav()">portföy</a>
+                <a href="#music" onclick="closeNav()">müzik</a>
+                <a href="#contact" onclick="closeNav()">iletişim</a>
             </div>
         </div>
     </aside>
+        <div class="mobile-menu-icon navbar" onclick="openNav()">
+        <img src="images/fa-bars.png" class="menu-icon" aria-label="Menu"></img>
+    </div>
+    <div class="menu-items" id="mobilemenu">
+        <img src="images/x-button.png" class="x-button" onclick="closeMenu()" aria-label="Close Menu">
+            <a href="#about" onclick="closeMenu()">hakkımda</a>
+            <a href="#portfolio" onclick="closeMenu()">portföy</a>
+            <a href="#music" onclick="closeMenu()">müzik</a>
+            <a href="#contact" onclick="closeMenu()">iletişim</a>
+    </div>
     <a href="./" aria-label="ingilizceye geç"><div class="lang-tr"></div></a>
     <div class="hero">
         <div class="hero-text">
@@ -110,4 +120,7 @@
 </div>
 <script src="deniz.js"></script>
   </body>
+<footer>
+    <p>&copy; 2023 | Deniz Kasap</p>
+</footer>
 </html>

@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>deniz</title>
+        <title>Deniz Kasap - Digital Marketing & Web Development</title>
         <meta name="description" content="I do web development, digital marketing and content writing. This is my website."/>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="styles.css"  type="text/css" />
     </head>
   <body>
-    <aside class="sidebar-wrapper" id="navbar">
+    <aside class="sidebar-wrapper" id="navbar" >
         <div class="sidebar">
             <div class="nav-list">
                 <a href="#about" onclick="closeNav()">about</a>
@@ -19,11 +19,21 @@
             </div>
         </div>
     </aside>
+    <div class="mobile-menu-icon navbar" onclick="openNav()">
+        <img src="images/fa-bars.png" class="menu-icon" aria-label="Menu"></img>
+    </div>
+    <div class="menu-items" id="mobilemenu">
+        <img src="images/x-button.png" class="x-button" onclick="closeMenu()" aria-label="Close Menu">
+            <a href="#about" onclick="closeMenu()">about</a>
+            <a href="#portfolio" onclick="closeMenu()">portfolio</a>
+            <a href="#music" onclick="closeMenu()">music</a>
+            <a href="#contact" onclick="closeMenu()">contact</a>
+    </div>
     <a href="./tr" aria-label="Switch to Turkish"><div class="lang"></div></a>
     <div class="hero">
         <div class="hero-text">
         <h1 class="hero-title">
-            denizkasap
+            deniz kasap
         </h1>
         <h2 class="second-hero-title">
             empowering digital presence<br>one click at a time
@@ -111,4 +121,7 @@
 </div>
 <script src="deniz.js"></script>
   </body>
+<footer>
+    <p>&copy; 2023 | Deniz Kasap</p>
+</footer>
 </html>
